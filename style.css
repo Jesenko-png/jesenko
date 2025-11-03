@@ -59,6 +59,7 @@
 .slikaDiv {
 	display: flex;
 	margin: 10px;
+	justify-content: left;
 	margin-top: 100px;
 }
 .textIspodslike {
