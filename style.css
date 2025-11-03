@@ -1,0 +1,73 @@
+* {
+	margin: 0%;
+	border: 0%;
+}
+/* Stil glavne liste */
+.meni {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	background-color: #333;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.meni > li {
+	position: relative; /* potrebno za pozicioniranje podliste */
+	padding: 15px 20px;
+	color: white;
+	cursor: pointer;
+}
+
+/* Skrivena podlista */
+.podmeni {
+	display: none; /* skriva se dok ne pređeš mišem */
+	position: absolute; /* pozicionira ispod glavnog li */
+	top: 100%; /* odmah ispod glavne stavke */
+	left: 0;
+	background-color: #444;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+/* Stil podliste */
+.podmeni li {
+	padding: 10px 20px;
+	color: white;
+	white-space: nowrap; /* sprječava da se tekst prelama */
+}
+
+/* Kada pređeš mišem preko glavne stavke, pokaži podlistu */
+.meni > li:hover .podmeni {
+	display: block;
+}
+
+/* Dodaj hover efekat za podlistu */
+.podmeni li:hover {
+	background-color: #555;
+}
+.naviga {
+	color: white;
+
+	text-decoration: none;
+}
+.slika {
+	width: 200px;
+}
+.slikaDiv {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+	margin-top: 100px;
+}
+.textIspodslike {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+body {
+	background-color: rgb(239, 239, 3);
+}
